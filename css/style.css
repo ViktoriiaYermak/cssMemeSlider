@@ -1,0 +1,185 @@
+body {
+    background: rgb(5 5 6 / 78%);
+    color: #000000;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+}
+
+.slider {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.5rem;
+    background-color: #bbb46d;
+    width: 49rem;
+    height: 43rem;
+    padding: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    margin-top: 2rem;
+    border-radius: 0.5rem;
+    overflow: hidden;
+}
+
+.slides {
+    width: 500%;
+    display: flex;
+    transition: 0.5s;
+}
+
+.slider input {
+    display: none;
+}
+
+.slide {
+    width: 100%;
+    scroll-snap-align: start;
+    transition: 0.5s;
+}
+
+.slide img {
+    height: 38rem;
+    width: 100%;
+    object-fit: contain;
+}
+
+#slide1:checked ~ .slides {
+    transform:translateX(0);
+}
+
+#slide2:checked ~ .slides {
+    transform:translateX(-20%);
+}
+
+#slide3:checked ~ .slides {
+    transform:translateX(-40%);
+}
+
+#slide4:checked ~ .slides {
+    transform:translateX(-60%);
+}
+
+#slide5:checked ~ .slides {
+    transform:translateX(-80%);
+}
+
+.text-button-conteiner {
+    display: flex;
+    justify-content: space-around;
+    margin: 0 3rem;
+}
+
+.text1,
+.text2,
+.text3,
+.text4,
+.text5 {
+    height: 0;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 1s;
+}
+
+.label {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 2rem;
+    width: 2.5rem;
+}
+
+.label:hover {
+    cursor: pointer;
+}
+
+.slider-button {
+    display: flex;
+    gap: 0.5rem;
+}
+
+.slider-button div {
+    width: 0.4rem;
+    height: 0.4rem;
+    border: 0.2rem solid #000000;
+    background: #000000;
+    padding: 0.33rem;
+    border-radius: 50%;
+    transition: 1s;
+}
+
+.label:hover .slider-hover {
+    cursor: pointer;
+    background-color: #bbb46d;
+    border: 0.2rem solid #000000;
+}
+
+.label:active .slider-hover {
+    background-color: #bbb46d;
+    border: 0.2rem solid #000000;
+}
+
+#slide1:checked ~ .text-button-conteiner .slider-btn1 {
+    background: #e5ff00;
+    border: 0.2rem solid #000000;
+}
+
+#slide2:checked ~ .text-button-conteiner .slider-btn2 {
+    background: #e5ff00;
+    border: 0.2rem solid #000000;
+}
+
+#slide3:checked ~ .text-button-conteiner .slider-btn3 {
+    background: #e5ff00;
+    border: 0.2rem solid #000000;
+}
+
+#slide4:checked ~ .text-button-conteiner .slider-btn4 {
+    background: #e5ff00;
+    border: 0.2rem solid #000000;
+}
+
+#slide5:checked ~ .text-button-conteiner .slider-btn5 {
+    background: #e5ff00;
+    border: 0.2rem solid #000000;
+}
+
+#slide1:checked ~ .text-button-conteiner .slider-btn1:hover,
+#slide2:checked ~ .text-button-conteiner .slider-btn2:hover,
+#slide3:checked ~ .text-button-conteiner .slider-btn3:hover,
+#slide4:checked ~ .text-button-conteiner .slider-btn4:hover,
+#slide5:checked ~ .text-button-conteiner .slider-btn5:hover {
+    border: 0.2rem solid #5c5c5c;
+}
+
+#slide1:checked ~ .text-button-conteiner .text1 {
+    height: auto;
+    opacity: 1;
+    visibility: visible;
+}
+
+#slide2:checked ~ .text-button-conteiner .text2 {
+    height: auto;
+    opacity: 1;
+    visibility: visible;
+}
+
+#slide3:checked ~ .text-button-conteiner .text3 {
+    height: auto;
+    opacity: 1;
+    visibility: visible;
+}
+
+#slide4:checked ~ .text-button-conteiner .text4 {
+    height: auto;
+    opacity: 1;
+    visibility: visible;
+}
+
+#slide5:checked ~ .text-button-conteiner .text5 {
+    height: auto;
+    opacity: 1;
+    visibility: visible;
+}
