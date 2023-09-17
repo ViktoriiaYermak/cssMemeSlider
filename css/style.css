@@ -185,7 +185,6 @@ body {
 }
 
 /* Adaptive */
-
 @media(max-width: 660px) {
     .slider {
         height: 70%;
