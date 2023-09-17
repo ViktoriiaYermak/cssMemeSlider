@@ -11,35 +11,38 @@
     <title>MemeSlider</title>
 </head>
 <body>
-    <div class="container">
-        <div class="slider">
-            <div class="slides">
-                <div class="slide" id="slide1">
-                    <img src="img/meme_1.png" alt="Meme 1" width="800" height="500">
-                </div>
-                <div class="slide" id="slide2"><img src="img/meme_2.png" alt="Meme 2" width="800" height="500"></div>
-                <div class="slide" id="slide3"><img src="img/meme_3.png" alt="Meme 3" width="800" height="500"></div>
-                <div class="slide" id="slide4"><img src="img/meme_4.png" alt="Meme 4" width="800" height="500"></div>
-                <div class="slide" id="slide5"><img src="img/meme_5.png" alt="Meme 5" width="800" height="500"></div>
+    <div class="slider">
+        <input type="radio" name="radio-button" id="slide1" checked>
+        <input type="radio" name="radio-button" id="slide2">
+        <input type="radio" name="radio-button" id="slide3">
+        <input type="radio" name="radio-button" id="slide4">
+        <input type="radio" name="radio-button" id="slide5">
+
+        <div class="slides">
+            <div class="slide"><img src="img/meme_1.png" alt="Meme 1"></div>
+            <div class="slide"><img src="img/meme_2.png" alt="Meme 2"></div>
+            <div class="slide"><img src="img/meme_3.png" alt="Meme 3"></div>
+            <div class="slide"><img src="img/meme_4.png" alt="Meme 4"></div>
+            <div class="slide"><img src="img/meme_5.png" alt="Meme 5"></div>
+        </div>
+
+        <div class="text-button-conteiner">
+            <div class="slider-text">
+                <div class="text1">Мемы создают</div>
+                <div class="text2">Веселый мир</div>
+                <div class="text3">Программирования </div>
+                <div class="text4">c JS, HTML и CSS</div>
+                <div class="text5">Мемчики для тебя^^</div>
+        </div>
+            <div class="slider-button">
+                <label for="slide1" class="label"><div class="slider-btn1 slider-hover"></div></label>
+                <label for="slide2" class="label"><div class="slider-btn2 slider-hover"></div></label>
+                <label for="slide3" class="label"><div class="slider-btn3 slider-hover"></div></label>
+                <label for="slide4" class="label"><div class="slider-btn4 slider-hover"></div></label>
+                <label for="slide5" class="label"><div class="slider-btn5 slider-hover"></div></label>
             </div>
         </div>
-        <div class="slides-btn">
-            <label for="slide1" class="slider-nav">
-                <input class="type-radio1" type="radio" name="slider" id="slide1" checked>
-            </label>
-            <label for="slide2" class="slider-nav">
-                <input class="type-radio" type="radio" name="slider" id="slide2">
-            </label>
-            <label for="slide3" class="slider-nav">
-                <input class="type-radio" type="radio" name="slider" id="slide3">
-            </label>
-            <label for="slide4" class="slider-nav">
-                <input class="type-radio" type="radio" name="slider" id="slide4">
-            </label>
-            <label for="slide5" class="slider-nav">
-                <input class="type-radio" type="radio" name="slider" id="slide5">
-            </label>
-        </div>
+
     </div>
 </body>
 </html>
